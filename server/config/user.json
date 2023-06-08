@@ -1,0 +1,40 @@
+[
+    {
+        "firstName":"Tom",
+        "lastName":"Bombadil",
+        "email":"bombababy@gmail.com",
+        "password":"password"
+    },
+    {
+        "firstName":"Lance",
+        "lastName":"Armstrong",
+        "email":"lancepants@gmail.com",
+        "password":"password"
+    },
+    {
+        "firstName":"Nate",
+        "lastName":"Long",
+        "email":"longarmofthelaw@gmail.com",
+        "password":"password"
+    },
+    {
+        "firstName":"Brian",
+        "lastName":"Edwards",
+        "email":"brian@gmail.com",
+        "password":"password"
+    },
+    {
+        "firstName":"Adam",
+        "lastName":"Sandler",
+        "email":"sandleran@gmail.com",
+        "password":"password"
+    },
+    {
+        "firstName":"Margaery",
+        "lastName":"Tyrell",
+        "email":"marge@gmail.com",
+        "password":"password"
+    }
+
+
+]
