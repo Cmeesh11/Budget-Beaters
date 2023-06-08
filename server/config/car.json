@@ -1,0 +1,162 @@
+[
+    {
+      "make": "Toyota",
+      "model": "Camry",
+      "year": 2019,
+      "color": "Silver",
+      "mileage": 25000,
+      "image": "https://example.com/images/camry.jpg"
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2020,
+      "color": "White",
+      "mileage": 15000,
+      "image": "https://example.com/images/accord.jpg"
+    },
+    {
+      "make": "Ford",
+      "model": "Mustang",
+      "year": 2018,
+      "color": "Red",
+      "mileage": 30000,
+      "image": "https://example.com/images/mustang.jpg"
+    },
+    {
+      "make": "Chevrolet",
+      "model": "Cruze",
+      "year": 2021,
+      "color": "Blue",
+      "mileage": 10000,
+      "image": "https://example.com/images/cruze.jpg"
+    },
+    {
+      "make": "Nissan",
+      "model": "Altima",
+      "year": 2017,
+      "color": "Black",
+      "mileage": 40000,
+      "image": "https://example.com/images/altima.jpg"
+    },
+    {
+      "make": "BMW",
+      "model": "3 Series",
+      "year": 2020,
+      "color": "Gray",
+      "mileage": 20000,
+      "image": "https://example.com/images/3series.jpg"
+    },
+    {
+      "make": "Mercedes-Benz",
+      "model": "C-Class",
+      "year": 2019,
+      "color": "Silver",
+      "mileage": 22000,
+      "image": "https://example.com/images/cclass.jpg"
+    },
+    {
+      "make": "Audi",
+      "model": "A4",
+      "year": 2021,
+      "color": "White",
+      "mileage": 8000,
+      "image": "https://example.com/images/a4.jpg"
+    },
+    {
+      "make": "Tesla",
+      "model": "Model S",
+      "year": 2022,
+      "color": "Blue",
+      "mileage": 5000,
+      "image": "https://example.com/images/models.jpg"
+    },
+    {
+      "make": "Volkswagen",
+      "model": "Golf",
+      "year": 2019,
+      "color": "Black",
+      "mileage": 18000,
+      "image": "https://example.com/images/golf.jpg"
+    },
+    {
+      "make": "Hyundai",
+      "model": "Elantra",
+      "year": 2020,
+      "color": "Red",
+      "mileage": 15000,
+      "image": "https://example.com/images/elantra.jpg"
+    },
+    {
+      "make": "Subaru",
+      "model": "Forester",
+      "year": 2017,
+      "color": "Green",
+      "mileage": 35000,
+      "image": "https://example.com/images/forester.jpg"
+    },
+    {
+      "make": "Lexus",
+      "model": "RX",
+      "year": 2018,
+      "color": "Gray",
+      "mileage": 28000,
+      "image": "https://example.com/images/rx.jpg"
+    },
+    {
+      "make": "Jeep",
+      "model": "Wrangler",
+      "year": 2021,
+      "color": "Yellow",
+      "mileage": 10000,
+      "image": "https://example.com/images/wrangler.jpg"
+    },
+    {
+      "make": "Mazda",
+      "model": "CX-5",
+      "year": 2020,
+      "color": "Red",
+      "mileage": 20000,
+      "image": "https://example.com/images/cx5.jpg"
+    },
+    {
+      "make": "Kia",
+      "model": "Sorento",
+      "year": 2019,
+      "color": "Silver",
+      "mileage": 23000,
+      "image": "https://example.com/images/sorento.jpg"
+    },
+    {
+      "make": "Volvo",
+      "model": "XC90",
+      "year": 2022,
+      "color": "Black",
+      "mileage": 8000,
+      "image": "https://example.com/images/xc90.jpg"
+    },
+    {
+      "make": "Chrysler",
+      "model": "300",
+      "year": 2018,
+      "color": "White",
+      "mileage": 30000,
+      "image": "https://example.com/images/300.jpg"
+    },
+    {
+      "make": "GMC",
+      "model": "Sierra",
+      "year": 2020,
+      "color": "Red",
+      "mileage": 15000,
+      "image": "https://example.com/images/sierra.jpg"
+    },
+    {
+      "make": "Jaguar",
+      "model": "F-Type",
+      "year": 2021,
+      "color": "Blue",
+      "mileage": 5000,
+      "image": "https://example.com/images/ftype.jpg"
+    }
+  ]
