@@ -20,4 +20,45 @@ function Login(props) {
           console.log(e);
         }
       };
+
+      const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormState({
+          ...formState,
+          [name]: value,
+        });
+      };
+
+      return (
+        <div className="container my-1">
+          <Link to="/signup">Signup</Link>
+    
+          <h2>Login</h2>
+          <form onSubmit={handleFormSubmit}>
+            <div>
+              <label htmlFor="email">Email:</label>
+              <input
+                placeholder="Enter email"
+                name="email"
+                type="email"
+                id="email"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <label htmlFor="pwd">Password:</label>
+              <input
+                placeholder="*********"
+                name="password"
+                type="password"
+                id="pwd"
+                onChange={handleChange}
+              />
+            </div>
+            <div>
+              <button type="submit">Login</button>
+            </div>
+          </form>
+        </div>
+      );
 }
