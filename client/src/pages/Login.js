@@ -30,7 +30,7 @@ function Login(props) {
   };
 
   return (
-    <div className="container my-1">
+    <div>
       <Link to="/signup">Signup</Link>
 
       <h2>Login</h2>
@@ -38,7 +38,7 @@ function Login(props) {
         <div>
           <label htmlFor="email">Email:</label>
           <input
-            placeholder="Enter email"
+            placeholder="example@email.com"
             name="email"
             type="email"
             id="email"
