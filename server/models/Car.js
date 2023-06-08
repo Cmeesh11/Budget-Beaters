@@ -20,9 +20,13 @@ const carSchema = new Schema({
     required: true
   },
   mileage: {
-    type: String,
+    type: Number,
     required: true
   },
+  image: {
+    type: Image,
+    required: true
+  }
 });
 
 const Car = mongoose.model('Car', carSchema);

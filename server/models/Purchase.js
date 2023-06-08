@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const Car = require('./Car');
 
 const { Schema } = mongoose;
 
@@ -8,7 +7,10 @@ const purchaseSchema = new Schema({
     type: Date,
     default: Date.now
   },
-  car: [Car.schema]
+  car: {
+    type: Schema.Types.ObjectId,
+    ref: 'Car'
+  }
 });
 
 const Purchase = mongoose.model('Purchase', purchaseSchema);
