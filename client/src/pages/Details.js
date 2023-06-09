@@ -4,13 +4,13 @@ import { useQuery } from '@apollo/client';
 
 import currentPurchase from '../components/currentPurchase';
 import { useStoreContext } from '../utils/GlobalState';
-// import {
-//   REMOVE_FROM_currentPurchaseItem,
-//   UPDATE_currentPurchaseItem_QUANTITY,
-//   ADD_TO_currentPurchaseItem,
-//   UPDATE_PRODUCTS,
-// } from '../utils/actions';
-// import { QUERY_PRODUCTS } from '../utils/queries';
+import {
+  REMOVE_FROM_CURRENTPURCHASE,
+  UPDATE_CURRENTPURCHASE_QUANTITY,
+  ADD_TO_CURRENTPURCHASE,
+  UPDATE_CARS,
+} from '../utils/actions';
+import { QUERY_CARS } from '../utils/queries';
 import { idbPromise } from '../utils/helpers';
 
 function Detail() {
