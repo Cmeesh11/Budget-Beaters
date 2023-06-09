@@ -23,8 +23,12 @@ const carSchema = new Schema({
     type: Number,
     required: true
   },
+  price: {
+    type: Number,
+    required: true
+  },
   image: {
-    type: Image,
+    type: String,
     required: true
   }
 });
