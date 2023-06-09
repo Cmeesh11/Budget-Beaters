@@ -106,7 +106,7 @@ function Detail() {
           />
         </div>
       ) : null}
-      <currentPurchaseItem />
+      <currentPurchase />
     </>
   );
 }
