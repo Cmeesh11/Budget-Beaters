@@ -11,17 +11,11 @@ const resolvers = {
     },
     // Retrieves car by Id
     car: async (parent, { _id }) => {
-      return Car.findyById(_id);
+      return Car.findById(_id);
     },
     // Retrieves cars based on criteria for search functionality
     carsByCriteria: async (parent, { make, model, year, mileage, color }) => {
       return Car.find({ make, model, year, mileage, color });
-    },
-    carsByMake: async () => {
-      return Car.distinct('make');
-    },
-    carsByModel: async () => {
-      return Car.distinct('model');
     },
     user: async (parent, args, context) => {
       if (context.user) {
@@ -72,16 +66,16 @@ const resolvers = {
     }
   },
   Mutation: {
-    addUser: async (parent, args) => {
+    createUser: async (parent, args) => {
       const user = await User.create(args);
       const token = signToken(user);
       
       return { token, user };
     },
-    createPurchase: async (parent, args) => {
+    createPurchase: async (parent, args, context) => {
       if (context.user) {
-        const purchase = new Purchase({ car });
-        await User.findByIdAndUpdate(context.user._id, { $push: { orders: order }});
+        const purchase = Purchase.create({ car: args.carId });
+        await User.findByIdAndUpdate(context.user._id, { $push: { purchases: purchase }});
         return purchase;
       } else {
         throw new AuthenticationError('Not logged in');

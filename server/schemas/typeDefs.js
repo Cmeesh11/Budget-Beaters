@@ -12,6 +12,10 @@ const typeDefs = gql`
     image: String
   }
 
+  type Checkout {
+    _id: ID
+  }
+
   type Purchase {
     _id: ID
     purchaseDate: String
@@ -49,16 +53,18 @@ const typeDefs = gql`
   type Query {
     cars: [Car]
     car(_id: ID): Car
+    carsByCriteria(make: String, model: String, year: Int, mileage: Int, color: String): [Car]
     users: [User]
     user(_id: ID): User
-    purchase(_id: ID!) Purchase
+    purchase(_id: ID!): Purchase
     checkout(cars: [ID]!): Checkout
   }
 
   type Mutation {
     createPurchase(input: PurchaseInput): Purchase
-    deletePurchase(_id: ID): Purchase
     createUser(input: UserInput): User
+    login(email: String, password: String): Auth
+  }
 `;
 
 module.exports = typeDefs;
