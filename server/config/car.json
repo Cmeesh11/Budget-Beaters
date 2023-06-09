@@ -1,43 +1,47 @@
 [
     {
       "make": "Toyota",
-      "model": "Camry",
+      "model": "Corolla",
       "year": 2019,
       "color": "Silver",
       "mileage": 25000,
-      "image": "https://example.com/images/camry.jpg"
+      "image": "https://pixabay.com/photos/toyota-corolla-red-automobiles-car-347288/"
     },
     {
       "make": "Honda",
       "model": "Accord",
       "year": 2020,
-      "color": "White",
+      "color": "Blue",
       "mileage": 15000,
-      "image": "https://example.com/images/accord.jpg"
+      "image": "https://pixabay.com/photos/honda-civic-honda-car-vehicle-8022865/",
+      "price":24800
     },
     {
       "make": "Ford",
       "model": "Mustang",
       "year": 2018,
-      "color": "Red",
+      "color": "Black",
       "mileage": 30000,
-      "image": "https://example.com/images/mustang.jpg"
+      "image": "https://pixabay.com/photos/ford-mustang-gt-sports-car-64041/",
+      "price": 36185
     },
     {
       "make": "Chevrolet",
-      "model": "Cruze",
+      "model": "Camaro",
       "year": 2021,
-      "color": "Blue",
+      "color": "Silver",
       "mileage": 10000,
-      "image": "https://example.com/images/cruze.jpg"
+      "image": "https://pixabay.com/photos/automobile-chevrolet-camaro-road-1112183/",
+      "price": 25000
     },
     {
       "make": "Nissan",
       "model": "Altima",
       "year": 2017,
-      "color": "Black",
+      "color": "White",
       "mileage": 40000,
-      "image": "https://example.com/images/altima.jpg"
+      "image": "https://pixabay.com/photos/nissan-nissan-altima-car-vehicle-885308/",
+      "price": 23000
     },
     {
       "make": "BMW",
@@ -45,7 +49,8 @@
       "year": 2020,
       "color": "Gray",
       "mileage": 20000,
-      "image": "https://example.com/images/3series.jpg"
+      "image": "https://pixabay.com/photos/bmw-suv-auto-fog-autumn-1216469/",
+      "price":43000
     },
     {
       "make": "Mercedes-Benz",
@@ -53,79 +58,89 @@
       "year": 2019,
       "color": "Silver",
       "mileage": 22000,
-      "image": "https://example.com/images/cclass.jpg"
+      "image": "https://pixabay.com/photos/auto-automobile-automotive-amg-2179220/",
+      "price": 33400
     },
     {
       "make": "Audi",
       "model": "A4",
       "year": 2021,
-      "color": "White",
+      "color": "Black",
       "mileage": 8000,
-      "image": "https://example.com/images/a4.jpg"
+      "image": "https://pixabay.com/photos/car-audi-auto-automotive-vehicle-604019/",
+      "price": 41000
     },
     {
       "make": "Tesla",
-      "model": "Model S",
+      "model": "Model 3",
       "year": 2022,
-      "color": "Blue",
+      "color": "Silver",
       "mileage": 5000,
-      "image": "https://example.com/images/models.jpg"
+      "image": "https://pixabay.com/photos/car-fall-vehicle-tesla-model-3-4781370/",
+      "price": 40000
     },
     {
       "make": "Volkswagen",
-      "model": "Golf",
+      "model": "Transporter",
       "year": 2019,
-      "color": "Black",
+      "color": "Red",
       "mileage": 18000,
-      "image": "https://example.com/images/golf.jpg"
+      "image": "https://pixabay.com/photos/volkswagon-classic-bus-van-retro-2424890/",
+      "price": 30000
     },
     {
       "make": "Hyundai",
       "model": "Elantra",
       "year": 2020,
-      "color": "Red",
+      "color": "White",
       "mileage": 15000,
-      "image": "https://example.com/images/elantra.jpg"
+      "image": "https://pixabay.com/photos/car-four-wheeler-vehicle-2359570/",
+      "price": 20000
     },
     {
       "make": "Subaru",
       "model": "Forester",
       "year": 2017,
-      "color": "Green",
+      "color": "Black",
       "mileage": 35000,
-      "image": "https://example.com/images/forester.jpg"
+      "image": "https://pixabay.com/photos/car-subaru-suv-outback-forest-6857227/",
+      "price":23000
     },
     {
       "make": "Lexus",
       "model": "RX",
       "year": 2018,
-      "color": "Gray",
+      "color": "Red",
       "mileage": 28000,
-      "image": "https://example.com/images/rx.jpg"
+      "image": "https://pixabay.com/photos/lexus-is-f-lexus-isf-car-auto-2914268/",
+      "price": 45000
     },
     {
       "make": "Jeep",
       "model": "Wrangler",
       "year": 2021,
-      "color": "Yellow",
+      "color": "Black",
       "mileage": 10000,
-      "image": "https://example.com/images/wrangler.jpg"
+      "image": "https://pixabay.com/photos/rubicon-jeep-wrangler-rugged-2432058/",
+      "price": 28000
     },
     {
       "make": "Mazda",
       "model": "CX-5",
       "year": 2020,
-      "color": "Red",
+      "color": "White",
       "mileage": 20000,
-      "image": "https://example.com/images/cx5.jpg"
+      "image": "https://pixabay.com/photos/car-traffic-road-vehicle-mazda-7540459/",
+      "price": 23200
     },
     {
       "make": "Kia",
       "model": "Sorento",
       "year": 2019,
-      "color": "Silver",
+      "color": "Red",
       "mileage": 23000,
-      "image": "https://example.com/images/sorento.jpg"
+      "image": "https://pixabay.com/photos/car-kia-korea-landscape-wheels-2616096/",
+      "price": 26290
     },
     {
       "make": "Volvo",
@@ -133,23 +148,26 @@
       "year": 2022,
       "color": "Black",
       "mileage": 8000,
-      "image": "https://example.com/images/xc90.jpg"
+      "image": "https://pixabay.com/photos/volvo-v90-auto-car-automobile-2396040/",
+      "price":51000
     },
     {
       "make": "Chrysler",
       "model": "300",
       "year": 2018,
-      "color": "White",
+      "color": "Silver",
       "mileage": 30000,
-      "image": "https://example.com/images/300.jpg"
+      "image": "https://pixabay.com/photos/car-vehicle-engine-parked-sedan-3939118/",
+      "price": 31000
     },
     {
       "make": "GMC",
       "model": "Sierra",
       "year": 2020,
-      "color": "Red",
+      "color": "Black",
       "mileage": 15000,
-      "image": "https://example.com/images/sierra.jpg"
+      "image": "https://pixabay.com/photos/gmc-truck-pickup-front-side-86689/",
+      "price": 31000
     },
     {
       "make": "Jaguar",
@@ -157,6 +175,7 @@
       "year": 2021,
       "color": "Blue",
       "mileage": 5000,
-      "image": "https://example.com/images/ftype.jpg"
+      "image": "https://pixabay.com/photos/car-auto-jaguar-blue-1920028/",
+      "price": 61600
     }
   ]
