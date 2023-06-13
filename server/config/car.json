@@ -5,7 +5,8 @@
       "year": 2019,
       "color": "Silver",
       "mileage": 25000,
-      "image": "https://pixabay.com/photos/toyota-corolla-red-automobiles-car-347288/"
+      "image": "https://pixabay.com/photos/toyota-corolla-red-automobiles-car-347288/",
+      "price": 21000
     },
     {
       "make": "Honda",
