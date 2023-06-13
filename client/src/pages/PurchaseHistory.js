@@ -31,7 +31,7 @@ function PurchaseHistory() {
                   {purchase.cars.map(({ _id, image, year, make, model, price }, index) => (
                     <div key={index} className="card px-1 py-1">
                       <Link to={`/cars/${_id}`}>
-                        <img alt={`${year}' '${make}' '${model}`} src={`/images/${image}`} />
+                        <img alt={`${year}' '${make}' '${model}`} src={image}/>
                         <p>{year}{' '}{make}{' '}{model}</p>
                       </Link>
                       <div>
