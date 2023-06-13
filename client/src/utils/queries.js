@@ -53,7 +53,7 @@ export const QUERY_SPECIFIC_CAR = gql`
 
 export const QUERY_USER = gql`
     getUser($id: String) {
-      getUser(_id: $id)
+      user(_id: $id)
         firstName
         lastName
         purchases {
