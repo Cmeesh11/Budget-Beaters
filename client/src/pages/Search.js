@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLazyQuery } from '@apollo/client';
-import { QUERY_CARS } from '../graphql/queries';
+import { QUERY_CARS } from '../utils/queries';
 
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
