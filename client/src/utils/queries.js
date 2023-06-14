@@ -1,8 +1,7 @@
 import { gql } from '@apollo/client';
 
-
 export const QUERY_CHECKOUT = gql`
-  query getCheckout(car: String) {
+  query getCheckout($car: String) {
     checkout(car: $car) {
       session
     }
@@ -10,6 +9,7 @@ export const QUERY_CHECKOUT = gql`
 `;
 
 export const QUERY_CARS = gql`
+  query getCars {
     cars {
       _id
       make
@@ -20,6 +20,7 @@ export const QUERY_CARS = gql`
       price
       image
     }
+  }
 `;
 
 export const QUERY_CAR = gql`
@@ -38,8 +39,22 @@ export const QUERY_CAR = gql`
 `;
 
 export const QUERY_SPECIFIC_CAR = gql`
-  query getCar($make: String, $model: String, $year: String, $color: String, $mileage: String, $price: String) {
-    car(make: $make, model: $model, year: $year, color: $color, mileage: $mileage, price: $price) {
+  query getCarsByCriteria(
+    $make: String
+    $model: String
+    $year: Int
+    $color: String
+    $mileage: Int
+    $price: Int
+  ) {
+    carsByCriteria(
+      make: $make
+      model: $model
+      year: $year
+      color: $color
+      mileage: $mileage
+      price: $price
+    ) {
       _id
       make
       model
@@ -52,23 +67,25 @@ export const QUERY_SPECIFIC_CAR = gql`
 `;
 
 export const QUERY_USER = gql`
-    getUser($id: String) {
-      user(_id: $id)
-        firstName
-        lastName
-        purchases {
-          purchaseDate
-          cars {
-            _id
-            make
-            model
-            year
-            color
-            mileage
-            price
-            image
-          }
+  query getUser($id: String) {
+    user(_id: $id) {
+      _id
+      firstName
+      lastName
+      purchases {
+        _id
+        purchaseDate
+        car {
+          _id
+          make
+          model
+          year
+          color
+          mileage
+          price
+          image
         }
       }
+    }
+  }
 `;
-
