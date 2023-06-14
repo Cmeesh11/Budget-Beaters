@@ -17,6 +17,7 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.15",
     "react-router-dom": "^6.12.1"
   }
 }

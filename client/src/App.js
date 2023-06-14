@@ -11,7 +11,6 @@ import { setContext } from '@apollo/client/link/context';
 
 import Confirmation from './pages/Confirmation';
 import Details from './pages/Details';
-import Favorites from './pages/Favorites';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
