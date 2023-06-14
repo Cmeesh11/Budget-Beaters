@@ -3,15 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
 import currentPurchase from '../components/currentPurchase';
-import { useStoreContext } from '../utils/GlobalState';
-import {
-  REMOVE_FROM_CURRENTPURCHASE,
-  UPDATE_CURRENTPURCHASE_QUANTITY,
-  ADD_TO_CURRENTPURCHASE,
-  UPDATE_CARS,
-} from '../utils/actions';
 import { QUERY_CARS } from '../utils/queries';
-import { idbPromise } from '../utils/helpers';
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -31,7 +23,7 @@ function Detail() {
     // retrieved from server
     else if (data) {
       dispatch({
-        type: UPDATE_CARS,
+        type: "UPDATE_CARS",
         cars: data.cars,
       });
 
@@ -43,7 +35,7 @@ function Detail() {
     else if (!loading) {
       idbPromise('cars', 'get').then((indexedCars) => {
         dispatch({
-          type: UPDATE_CARS,
+          type: "UPDATE_CARS",
           cars: indexedCars,
         });
       });
@@ -54,7 +46,7 @@ function Detail() {
     const itemInCurrentPurchase = currentPurchase.find((currentPurchaseItem) => currentPurchaseItem._id === id);
     if (itemInCurrentPurchase) {
       dispatch({
-        type: UPDATE_CURRENTPURCHASE_QUANTITY,
+        type: "UPDATE_CURRENT_PURCHASE_QUANTITY",
         _id: id,
         purchaseQuantity: parseInt(itemInCurrentPurchase.purchaseQuantity) + 1,
       });
@@ -64,7 +56,7 @@ function Detail() {
       });
     } else {
       dispatch({
-        type: ADD_TO_CURRENTPURCHASE,
+        type: "ADD_TO_CURRENT_PURCHASE",
         product: { ...currentCar, purchaseQuantity: 1 },
       });
       idbPromise('currentPurchase', 'put', { ...currentCar, purchaseQuantity: 1 });
@@ -73,7 +65,7 @@ function Detail() {
 
   const removeFromcurrentPurchase = () => {
     dispatch({
-      type: REMOVE_FROM_CURRENTPURCHASE,
+      type: "REMOVE_FROM_CURRENT_PURCHASE",
       _id: currentCar._id,
     });
 
