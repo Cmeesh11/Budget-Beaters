@@ -56,10 +56,10 @@ function App() {
                 path="/signup" 
                 element={<Signup />} 
               />
-              <Route 
+              {/* <Route 
                 path="/confirmation" 
                 element={<Confirmation />} 
-              />
+              /> */}
               <Route 
                 path="/purchaseHistory" 
                 element={<PurchaseHistory />} 
