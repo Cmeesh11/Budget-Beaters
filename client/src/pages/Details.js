@@ -1,26 +1,33 @@
-import React from 'react';
+import React, { useReducer } from 'react';
+import { loadStripe } from '@stripe/stripe-js';
 import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_CARS } from '../utils/queries';
-import { QUERY_CHECKOUT } from '../../utils/queries';
+import { QUERY_CHECKOUT } from '../utils/queries';
+import Auth from '../utils/auth'
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
-
-function submitPurchase() {
-  const productIds = [];
-
-  state.cart.forEach((item) => {
-    for (let i = 0; i < item.purchaseQuantity; i++) {
-      productIds.push(item._id);
-    }
-  });
-
-  getPurchase({
-    variables: { products: productIds },
-  });
+const reducer = function(state, action) {
+  return state;
 }
+
 function Detail() {
+  const [ state, setState] = useReducer(reducer, { cart: [] })
   const { data } = useQuery(QUERY_CARS);
   let car;
+
+  function submitPurchase() {
+    const productIds = [];
+  
+    state.cart.forEach((item) => {
+      for (let i = 0; i < item.purchaseQuantity; i++) {
+        productIds.push(item._id);
+      }
+    });
+  
+    // getPurchase({
+    //   variables: { products: productIds },
+    // });
+  }
 
   if (data) {
     car = data.car;
@@ -46,8 +53,8 @@ function Detail() {
           </p>
 
           <img
-            src={`/images/${currentCar.image}`}
-            alt={currentCar.name}
+            src={`/images/${car.image}`}
+            alt={car.name}
           />
         </div>
       ) : null}
