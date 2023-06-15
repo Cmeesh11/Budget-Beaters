@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_CARS } from '../utils/queries';
-import { QUERY_CHECKOUT } from '../../utils/queries';
+import { QUERY_CHECKOUT } from '../utils/queries';
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 function submitPurchase() {

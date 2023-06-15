@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useLazyQuery } from '@apollo/client';
 import { QUERY_CARS } from '../utils/queries';
 
-const SearchBar = () => {
+const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchCars, { loading, data }] = useLazyQuery(QUERY_CARS);
 
@@ -44,4 +44,4 @@ const SearchBar = () => {
   );
 };
 
-export default SearchBar;
+export default Search;
