@@ -12,10 +12,10 @@ function Signup(props) {
       event.preventDefault();
       const mutationResponse = await createUser({
         variables: {
-          email: formState.email,
-          password: formState.password,
-          firstName: formState.firstName,
-          lastName: formState.lastName,
+            email: formState.email,
+            password: formState.password,
+            firstName: formState.firstName,
+            lastName: formState.lastName,
         },
       });
       const token = mutationResponse.data.createUser.token;

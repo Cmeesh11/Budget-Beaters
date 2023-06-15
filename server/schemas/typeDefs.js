@@ -44,10 +44,9 @@ const typeDefs = gql`
     car: ID
   }
 
-  input UserInput {
-    firstName: String
-    lastName: String
-    email: String
+  type CreateUserResponse {
+    token: ID
+    user: User
   }
 
   type Query {
@@ -62,7 +61,7 @@ const typeDefs = gql`
 
   type Mutation {
     createPurchase(input: PurchaseInput): Purchase
-    createUser(input: UserInput): User
+    createUser(firstName: String, lastName: String, email: String, password: String): CreateUserResponse
     login(email: String, password: String): Auth
   }
 `;
