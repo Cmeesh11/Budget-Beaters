@@ -5,7 +5,7 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 
 const resolvers = {
   Query: {
-    // Retreives all card
+    // Retreives all cars
     cars: async () => {
       return await Car.find();
     },
@@ -27,7 +27,7 @@ const resolvers = {
     },
     purchase: async (parent, { _id }, context) => {
       if (context.user) {
-        return await User.findById()
+        return await User.findById( _id );
       } else {
         throw new AuthenticationError('Not logged in');
       }

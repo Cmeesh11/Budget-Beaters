@@ -9,7 +9,7 @@ export const QUERY_CHECKOUT = gql`
 `;
 
 export const QUERY_CARS = gql`
-  query getCars {
+  {
     cars {
       _id
       make
