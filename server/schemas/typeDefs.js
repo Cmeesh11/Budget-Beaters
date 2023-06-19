@@ -3,7 +3,7 @@ const { gql } = require('apollo-server-express');
 const typeDefs = gql`
   type Car {
     _id: ID
-    name: String
+    price: Int
     make: String
     model: String
     year: Int
