@@ -11,9 +11,9 @@ function Login() {
   return (
     <>
       {!login ? (
-        <button className="btn btn-success"><a href="/login">Login/Signup</a></button>
+        <button className="btn btn-primary "><a className="text-light" href="/login">Login/Signup</a></button>
       ) : (
-        <button className="btn btn-success"><a href="/logout">Logout</a></button>
+        <button className="btn btn-primary"><a className="text-light" href="/logout">Logout</a></button>
       )}
     </>
   );

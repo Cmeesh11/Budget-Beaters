@@ -19,11 +19,11 @@ const Home = () => {
 
   return (
     <div>
-      <button className="btn btn-primary"><a href="/">Home</a></button>
-      <button className="btn btn-secondary">Secondary</button>
-      <button className="btn btn-tertiary">Tertiary</button>
-      <Login />
-      <div className="d-flex flex-wrap">
+      <div className='d-flex justify-content-around'>
+        <button className="btn btn-primary"><a className="text-light" href="/">Home</a></button>
+        <Login />
+      </div>
+      <div className="d-flex flex-wrap justify-content-between">
         {cars.map((car) => (
           <CarCard
             key={car._id}
