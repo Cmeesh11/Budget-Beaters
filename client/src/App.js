@@ -9,13 +9,11 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import Confirmation from './pages/Confirmation';
 import Details from './pages/Details';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import NoMatch from './pages/NoMatch';
 import PurchaseHistory from './pages/PurchaseHistory';
-import Search from './components/Search';
 import Signup from './pages/Signup';
 
 const httpLink = createHttpLink({
@@ -42,7 +40,6 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-            <Search />
             <Routes>
               <Route 
                 path="/" 
@@ -65,7 +62,7 @@ function App() {
                 element={<PurchaseHistory />} 
               />
               <Route 
-                path="/car/:id" 
+                path="/car/:_id" 
                 element={<Details />} 
               />
               <Route 
