@@ -3,17 +3,18 @@ import { loadStripe } from '@stripe/stripe-js';
 import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_CARS } from '../utils/queries';
-import { QUERY_CHECKOUT } from '../utils/queries';
-import Auth from '../utils/auth'
-const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+
+
+import Auth from '../utils/auth';
+const stripePromise = loadStripe('pk_test_TYooM;QauvdEDq54NiTphI7jx');
 const reducer = function(state, action) {
   return state;
-}
+}//
 
 function Detail() {
   const [ state, setState] = useReducer(reducer, { cart: [] })
   const { data } = useQuery(QUERY_CARS);
-  let car;
+  const { _id } = useParams();
 
   function submitPurchase() {
     const productIds = [];
@@ -22,7 +23,8 @@ function Detail() {
       for (let i = 0; i < item.purchaseQuantity; i++) {
         productIds.push(item._id);
       }
-    });
+      
+    });// fetch using the car id store id in variable or send it to backend
   
     // getPurchase({
     //   variables: { products: productIds },
@@ -39,6 +41,8 @@ function Detail() {
         <div className="container my-1">
           <Link to="/">← Back to Cars</Link>
 
+          <img src={car.image} className="card-img-top w-100" alt="car" />
+
           <h2>{car.year} {car.make} {car.model} </h2>
 
           <p>
@@ -53,7 +57,7 @@ function Detail() {
           </p>
 
           <img
-            src={`/images/${car.image}`}
+            src={car.image}
             alt={car.name}
           />
         </div>
