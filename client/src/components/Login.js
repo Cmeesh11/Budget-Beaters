@@ -13,7 +13,7 @@ function Login() {
       {!login ? (
         <button className="btn btn-primary "><a className="text-light" href="/login">Login/Signup</a></button>
       ) : (
-        <button className="btn btn-primary"><a className="text-light" href="/logout">Logout</a></button>
+        <button className="btn btn-primary"><a className="text-light" href="/" onClick={() => Auth.logout()}>Logout</a></button>
       )}
     </>
   );
