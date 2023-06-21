@@ -53,10 +53,6 @@ function App() {
                 path="/signup" 
                 element={<Signup />} 
               />
-              {/* <Route 
-                path="/confirmation" 
-                element={<Confirmation />} 
-              /> */}
               <Route 
                 path="/purchaseHistory" 
                 element={<PurchaseHistory />} 

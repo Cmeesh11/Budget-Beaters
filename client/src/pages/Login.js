@@ -64,6 +64,7 @@ function Login(props) {
           <button type="submit">Submit</button>
         </div>
       </form>
+      <button className="btn btn-primary"><a className="text-light" href="/">Home</a></button>
     </div>
   );
 }
