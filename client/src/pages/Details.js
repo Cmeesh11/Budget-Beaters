@@ -15,6 +15,7 @@ function Details() {
   const { loading, data } = useQuery(QUERY_CAR, {
     variables: { _id }
   });
+
   
   const car = data?.car;
 
