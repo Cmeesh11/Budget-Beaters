@@ -37,6 +37,7 @@ function Details() {
             model={car.model}
           />
           <button className='btn btn-success'><a className="text-white" href='#'>Purchase</a></button>
+          <button className='btn btn-primary'><a className="text-white" href='/'>Home</a></button>
       </div>
     </div>
   );
