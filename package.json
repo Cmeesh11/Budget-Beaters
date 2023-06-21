@@ -19,6 +19,7 @@
   "dependencies": {
     "@apollo/client": "^3.7.15",
     "deep-equal": "^2.2.1",
+    "mongoose": "^7.3.0",
     "react-router-dom": "^6.12.1"
   }
 }
